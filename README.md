@@ -23,7 +23,7 @@ Allows users to safely change their network interface MAC address, with **first-
 
 ---
 
-## Installation & Usage
+## Usage
 
 ```bash
 sudo python3 spoofer.py

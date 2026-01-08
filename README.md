@@ -42,3 +42,8 @@ Choose:
 ## Warning
 Do not delete og_mac.txt, it stores your original MAC
 
+## DISCLAIMER
+
+- Use responsibly.
+- Changing MAC addresses may disrupt network connections.
+- Tested on Kali Linux only

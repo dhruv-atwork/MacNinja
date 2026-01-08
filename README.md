@@ -27,4 +27,18 @@ Allows users to safely change their network interface MAC address, with **first-
 
 ```bash
 sudo python3 spoofer.py
+```
+
+---
+
+Enter the network interface (eth0, wlan0, etc.)
+
+Choose:
+
+1. Spoof to a random MAC
+
+2. Restore original MAC
+
+## Warning
+Do not delete og_mac.txt, it stores your original MAC
 

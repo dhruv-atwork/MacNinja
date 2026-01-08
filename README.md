@@ -24,3 +24,7 @@ Allows users to safely change their network interface MAC address, with **first-
 ---
 
 ## Installation & Usage
+
+```bash
+sudo python3 spoofer.py
+

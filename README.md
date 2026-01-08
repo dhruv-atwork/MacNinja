@@ -39,6 +39,15 @@ Choose:
 
 2. Restore original MAC
 
+<img width="888" height="185" alt="image" src="https://github.com/user-attachments/assets/08645622-5abb-465a-a4ff-71c85e76867f" />
+
+<img width="927" height="307" alt="image" src="https://github.com/user-attachments/assets/3a20ce77-5369-4d19-9589-23481a194608" />
+
+<img width="914" height="360" alt="image" src="https://github.com/user-attachments/assets/09e60cfb-df09-4f47-8eb2-e0b10e145ab6" />
+
+<img width="935" height="289" alt="image" src="https://github.com/user-attachments/assets/d39b79ad-81d7-499a-8c06-ccfddf83a5c8" />
+
+
 ## Warning
 Do not delete og_mac.txt, it stores your original MAC
 

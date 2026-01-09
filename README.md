@@ -153,11 +153,11 @@ sudo python cript_macninja.py
 
 ### Python Modules Used
 All modules are part of the Python standard library:
-- `subprocess`
-- `sys`
-- `re`
-- `random`
-- `os`
+- `subprocess` - Used to execute Linux networking commands (ip, ifconfig) directly from Python.
+- `sys` - Used to detect the operating system and safely exit the program when requirements are not met.
+- `re` - Used to extract the MAC address from command output using regular expressions.
+- `random` - Used to generate random hexadecimal values for creating spoofed MAC addresses.
+- `os` - Used for file handling and checking the existence of the MAC address backup file.
 
 ---
 

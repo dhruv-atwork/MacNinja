@@ -81,7 +81,7 @@ All modules are part of the Python standard library:
 
 ---
 
-## Warning
+## Warning ⚠
 Do not delete og_mac.txt, it stores your original MAC
 
 ## DISCLAIMER

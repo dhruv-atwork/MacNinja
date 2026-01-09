@@ -11,7 +11,7 @@ BACKUP_FILE = "og_mac.txt"
 
 # Checking if the script's running in Linux for my trust issues on user
 if sys.platform != "linux":
-    messagebox.showerror("Error", "This is a Linux only script!")
+    messagebox.showerror("Error", "This is a Linux only program!")
     sys.exit()
 
 # Checking if the user really read the readme file and is using root for running this script.
@@ -121,3 +121,4 @@ status_label = tk.Label(
 status_label.pack(pady=10)
 
 window.mainloop()
+

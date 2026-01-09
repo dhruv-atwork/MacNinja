@@ -28,15 +28,31 @@ It allows users to **view, randomize, and restore** their network interface MAC 
 
 - GUI-based MAC address changer for Linux
 
+### What if it's run without root/sudo ?
 <img width="618" height="261" alt="image" src="https://github.com/user-attachments/assets/105a5a7c-a7b6-49eb-81c9-f245f9629d8b" />
+
+### Main GUI
 
 <img width="779" height="313" alt="image" src="https://github.com/user-attachments/assets/aaa8ae20-183b-484b-8f36-f7b3a68c5b8b" />
 
+### Aquiring Current Mac Address
+
 <img width="421" height="297" alt="image" src="https://github.com/user-attachments/assets/b97bc08e-9c19-4fad-a6bb-8dec7ae866e7" />
 
-### After masking:
+### After masking
 <img width="425" height="289" alt="image" src="https://github.com/user-attachments/assets/8b3305c9-931f-4b02-85bf-7be03996361b" />
 
+### First time Backup
+
+<img width="435" height="298" alt="image" src="https://github.com/user-attachments/assets/eb8ac135-a3fc-4f9c-b69d-961be3ca8465" />
+
+### Restoring Mac Address
+
+<img width="445" height="298" alt="image" src="https://github.com/user-attachments/assets/3a9df0e2-d8bb-4579-86aa-21c9b73bed89" />
+
+### og_mac.txt , saved in the same directory as .py script
+
+<img width="428" height="127" alt="image" src="https://github.com/user-attachments/assets/30667fba-9d14-4412-a6f2-e5927f02842e" />
 
 ---
 

@@ -5,7 +5,7 @@ It allows users to **view, randomize, and restore** their network interface MAC 
 
 ---
 
-#  MAC NINJA SOFTWARE
+#  MAC NINJA SOFTWARE (Scroll down for Script)
 
 ## 🚀 Features
 
@@ -83,16 +83,6 @@ All modules are part of the Python standard library:
 
 ---
 
-## Warning ⚠
-Do not delete og_mac.txt, it stores your original MAC
-
-## DISCLAIMER
-
-- Use responsibly.
-- Changing MAC addresses may disrupt network connections.
-- Tested on Kali Linux only
-
-
 # MAC NINJA SCRIPT
 
 
@@ -157,7 +147,7 @@ git clone https://github.com/yourusername/MacNinja.git
 cd MacNinja
 ```
 ```bash
-sudo python macninja_script.py
+sudo python cript_macninja.py
 ```
 ---
 
@@ -168,12 +158,13 @@ All modules are part of the Python standard library:
 - `re`
 - `random`
 - `os`
-- `tkinter`
 
 ---
 
 ## Warning ⚠
-Do not delete og_mac.txt, it stores your original MAC
+Do not delete og_mac.txt, it stores your original MAC Address
+
+---
 
 ## DISCLAIMER
 

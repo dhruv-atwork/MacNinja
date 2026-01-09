@@ -5,7 +5,7 @@ It allows users to **view, randomize, and restore** their network interface MAC 
 
 ---
 
-#  MAC NINJA SOFTWARE (Scroll down for Script)
+#  MAC NINJA GUI BASED (Scroll down for CLI BASED)
 
 MacNinja is a **Linux-only MAC address masking/spoofing tool** written in Python.  
 It allows users to **view, randomize, and restore** their network interface MAC address — now with a **Graphical User Interface (GUI)** built using **Tkinter**.
@@ -88,7 +88,7 @@ All modules are part of the Python standard library:
 
 ---
 
-# MAC NINJA SCRIPT
+# MAC NINJA CLI BASED
 
 
 MacNinja Script is a **Linux-only MAC address masking/spoofing Script** written in Python.  

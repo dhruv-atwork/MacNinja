@@ -56,6 +56,9 @@ def generate_random_mac():
         hex_part = f"{random_number:02x}"
         mac_hexes.append(hex_part)
 
+    # Make MAC locally administered and unicast
+    mac[0] = (mac[0] & 254) | 2
+
     mac_address = ":".join(mac_hexes)
     return mac_address
 
@@ -107,4 +110,5 @@ else:
 
 mac_address_now = get_current_address(interface)
 print(f"\n Now your Mac Address is: {mac_address_now}")
+
 

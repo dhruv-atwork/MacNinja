@@ -4,6 +4,15 @@ import re
 import random
 import os
 
+
+print('''
+███╗░░░███╗░█████╗░░█████╗░███╗░░██╗██╗███╗░░██╗░░░░░██╗░█████╗░
+████╗░████║██╔══██╗██╔══██╗████╗░██║██║████╗░██║░░░░░██║██╔══██╗
+██╔████╔██║███████║██║░░╚═╝██╔██╗██║██║██╔██╗██║░░░░░██║███████║
+██║╚██╔╝██║██╔══██║██║░░██╗██║╚████║██║██║╚████║██╗░░██║██╔══██║
+██║░╚═╝░██║██║░░██║╚█████╔╝██║░╚███║██║██║░╚███║╚█████╔╝██║░░██║
+╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝╚═╝╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝''')
+
 # BACKUP FOR FIRST TIME RUN
 
 BACKUP_FILE = "og_mac.txt"
@@ -11,19 +20,19 @@ BACKUP_FILE = "og_mac.txt"
 
 # Checking if the script's running in Linux for my trust issues on user
 if sys.platform != "linux":
-    print("This is a Linux only script!")
+    print("\nThis is a Linux only script!")
     sys.exit()
 
 # Checking if the user really read the readme file and is using root for running this script.
 if subprocess.run(["id", "-u"], capture_output=True, text=True).stdout.strip() != "0":
     print(
-        "This script requires root/sudo access. Run 'sudo su' in your commands shell and run this script for functionality.")
+        "\nThis script requires root/sudo access. Run 'sudo su' in your commands shell and run this script for functionality.\n")
     sys.exit()
 
 # Asking user which interface's mac address to spoof
 interface = input(
-    " Enter the interface you wish to mask/spoof(eth0, wlan0 etc.)\n"
-    " If you're unsure, continue with eth0. If that doesn't work, check using ifconfig in your Linux shell: ")
+    "\n Enter the interface you wish to mask/spoof(eth0, wlan0 etc.)"
+    "\n If you're unsure, continue with eth0. If that doesn't work, check using ifconfig in your Linux shell.\n""Enter the interface: ")
 
 
 # defining a function to fetch original mac address of the interface
@@ -63,38 +72,39 @@ if not original_mac:
     print("Mac address not found!")
     sys.exit()
 else:
-    print(f" Current MAC address: {original_mac}")
+    print(f"\n Current MAC address: {original_mac}")
 
 # LET'S BACK UP THEIR ORIGINAL MAC ADDRESS IN CASE THEY'RE RUNNING THIS SCRIPT FOR THE 1ST TIME
 if not os.path.exists(BACKUP_FILE):
     with open(BACKUP_FILE, "w") as f:
         f.write(original_mac)
-    print("Since it was your first run, your original mac address is backed up in og_mac.txt")
+    print("\nSince it was your first run, your original mac address is backed up in og_mac.txt")
 else:
-    print("Your original Mac address is backed up to og_mac.txt, you can use option 2 ")
+    print("\nYour original Mac address is backed up to og_mac.txt, you can use option 2 ")
 
 with open(BACKUP_FILE, "r") as f:
     data = f.read().strip()
 
-print("⚠️ DO NOT DELETE og_mac.txt else you won't be able to use option 2 ⚠️")
-print("How do you want to proceed?")
-print("1 Mask to a Random Mac Address")
-print("2 Restore the original Mac Address")
+print("\n⚠️ DO NOT DELETE og_mac.txt else you won't be able to use option 2 ⚠️\n")
+print("\nHow do you want to proceed?\n")
+print("\n1 Mask to a Random Mac Address\n")
+print("\n2 Restore the original Mac Address")
 
-option = int(input("Enter your action: "))
+option = int(input("\nEnter your action: "))
 
 if option == 1:
     rand_mac = generate_random_mac()
-    print(f" Changed Mac address: {rand_mac}")
+    print(f"\n Changed Mac address: {rand_mac}")
     change_mac(interface, rand_mac)
 
 elif option == 2:
-    print("Restoring the original Mac Address......")
+    print("\n Restoring the original Mac Address......")
     change_mac(interface, data)
 
 else:
-    print("Invalid Option. Choose between 1 and 2")
+    print("\n Invalid Option. Choose between 1 and 2")
     sys.exit()
 
 mac_address_now = get_current_address(interface)
 print(f"\n Now your Mac Address is: {mac_address_now}")
+

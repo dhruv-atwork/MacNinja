@@ -5,6 +5,8 @@ It allows users to **view, randomize, and restore** their network interface MAC 
 
 ---
 
+#  MAC NINJA SOFTWARE
+
 ## 🚀 Features
 
 - ✅ View current MAC address of a network interface
@@ -67,6 +69,95 @@ cd MacNinja
 ```
 ```bash
 sudo python macninja.py
+```
+---
+
+### Python Modules Used
+All modules are part of the Python standard library:
+- `subprocess`
+- `sys`
+- `re`
+- `random`
+- `os`
+- `tkinter`
+
+---
+
+## Warning ⚠
+Do not delete og_mac.txt, it stores your original MAC
+
+## DISCLAIMER
+
+- Use responsibly.
+- Changing MAC addresses may disrupt network connections.
+- Tested on Kali Linux only
+
+
+# MAC NINJA SCRIPT
+
+
+MacNinja Script is a **Linux-only MAC address masking/spoofing Script** written in Python.  
+It allows users to **view, randomize, and restore** their network interface MAC address — using only Command Line Interface (CLI) 
+
+---
+
+## 🚀 Features
+
+- ✅ View current MAC address of a network interface
+- 🎭 Mask/Spoof MAC address with a randomly generated value
+- 🔄 Restore the original MAC address
+- 💾 Automatic backup of original MAC address on first run
+- 🔐 Requires root privileges (safe system-level execution)
+
+---
+
+## 🛠️ Requirements
+
+- **Operating System:** Linux
+- **Python Version:** Python 3.12+
+- **Privileges:** Root / sudo access 
+
+---
+
+## 🖼️ Preview
+
+- CLI-based MAC address changer for Linux
+
+### What if it's run without root/sudo ?
+<img width="631" height="247" alt="image" src="https://github.com/user-attachments/assets/355dbfe2-61c6-46ff-81d7-ad695d485d4d" />
+
+### First Look
+
+<img width="625" height="271" alt="image" src="https://github.com/user-attachments/assets/4672c4d1-e3f8-487d-b006-22cd74807734" />
+
+### Aquiring Current Mac Address
+
+<img width="838" height="498" alt="image" src="https://github.com/user-attachments/assets/19cd8436-823c-463c-a3b3-9edc0b18c0ed" />
+
+### After masking
+<img width="643" height="374" alt="image" src="https://github.com/user-attachments/assets/3c7dbfd1-a6bb-4d29-9d78-a7ec42c631bf" />
+
+### Restoring Mac Address
+
+<img width="633" height="318" alt="image" src="https://github.com/user-attachments/assets/94e83b9a-85e2-45b1-b175-1f8f30785411" />
+
+### og_mac.txt , saved in the same directory as .py script
+
+<img width="428" height="127" alt="image" src="https://github.com/user-attachments/assets/30667fba-9d14-4412-a6f2-e5927f02842e" />
+
+---
+
+## ⚙️ Installation & Usage
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/MacNinja.git
+```
+```bash
+cd MacNinja
+```
+```bash
+sudo python macninja_script.py
 ```
 ---
 

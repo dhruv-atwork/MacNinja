@@ -38,10 +38,12 @@ def generate_random_mac():
 
     for i in range(6):
         random_number = random.randint(0x00, 0xff)
-        hex_part = f"{random_number:02x}"
-        mac_hexes.append(hex_part)
+        mac_hexes.append(random_number)
 
-    mac_address = ":".join(mac_hexes)
+    #bit manipulation to avoid multicast MAC addresses
+    mac_bytes[0] = (mac_bytes[0] & 0b11111110) | 0b00000010
+    
+    mac_address = ":".join(f"{byte:02x}" for byte in mac_bytes)
     return mac_address
 
  # function which backs up the user's original mac address
@@ -121,4 +123,5 @@ status_label = tk.Label(
 status_label.pack(pady=10)
 
 window.mainloop()
+
 

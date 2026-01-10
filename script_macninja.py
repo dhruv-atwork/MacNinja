@@ -51,12 +51,13 @@ def get_current_address(interface):
 def generate_random_mac():
     mac_hexes = []
 
-    for _ in range(6):
+    for i in range(6):
         random_number = random.randint(0x00, 0xff)
-        hex_part = f"{random_number:02x}"
-        mac_hexes.append(hex_part)
+        mac_hexes.append(random_number)
 
-    mac_address = ":".join(mac_hexes)
+    mac_hexes[0] = (mac_hexes[0] & 0b11111110) | 0b00000010
+
+    mac_address = ":".join(f"{byte:02x}" for byte in mac_hexes)
     return mac_address
 
 
@@ -107,6 +108,7 @@ else:
 
 mac_address_now = get_current_address(interface)
 print(f"\n Now your Mac Address is: {mac_address_now}")
+
 
 
 
